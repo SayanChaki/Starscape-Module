@@ -8,6 +8,9 @@ import cv2
 from matplotlib import pyplot as plt
 import numpy as np
 import math
+from PIL import Image  
+import PIL
+
 def onbrightness():
 
 
@@ -63,6 +66,7 @@ def onbrightness():
  
  plt.imshow(img)
  plt.show()
+ cv2.imwrite('Eso_bright.jpg',img)
 
 def shiftbased():
     img =cv2.imread("ESO.jpg")
@@ -91,6 +95,7 @@ def shiftbased():
     print(c)
     plt.imshow(img1)
     plt.show()
+    cv2.imwrite('Eso_shift.jpg',img1)
 
 def temperaturedatabase():
     
@@ -332,9 +337,7 @@ def color():
         plt.imshow(img1)
         plt.show()
         rx,gx,bx=img1[75,80]
-        print(rx)
-        print(gx)
-        print(bx)
+        
         up_temp=int(input("Enter the upper temperature limit"))
         up_temp=up_temp-1500
         low_temp=int(input("Enter the lower temperature limit"))
@@ -390,7 +393,7 @@ def color():
         print(c)      
         plt.imshow(img1)
         plt.show()
-    
+        cv2.imwrite('Eso_temperature.jpg',img1)
 def interpolate(x1,y1,x2,y2,z):
      newz=((z-x1)*y1)/(x2-x1) +  ((z-x2)*y2)/(x1-x2)
      return newz
