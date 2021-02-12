@@ -3,7 +3,7 @@
 ## Introduction
 The following Python Module is an Astronomy repository using ideas of Image Segmentation to filter/contour out images of stars from star clusters or any Astronomical data obtained by professional telescopes like VLT or the Hubble Space Telescope based on the brightness of stars, redshift and temperature.The project uses idea of Computer Vision and in all uses the OpenCV, Matalab and PIL package of Python to segment out the necessary data. 
  
- Data that can be studied using the module include both Raw Data and Processed dat like:
+ Data that can be studied using the module include both Raw Data and Processed data like:
  
 ![hd17](https://user-images.githubusercontent.com/77894161/105863173-9b8a2100-6016-11eb-8a16-509677bc07d6.jpg)
 
